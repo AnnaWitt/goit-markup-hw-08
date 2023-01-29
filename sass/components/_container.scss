@@ -1,0 +1,27 @@
+.container {
+  width:100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 480px;
+
+  &--header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $tenth-color;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
