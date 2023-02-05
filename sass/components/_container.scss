@@ -1,27 +1,30 @@
 .container {
-  width:100%;
-  margin: 0 auto;
-  padding: 0 15px;
-  max-width: 480px;
+    max-width: 480px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
 
-  &--header {
-    padding-top: 24px;
-    padding-bottom: 24px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: $tenth-color;
-  }
-}
+    @include tablet {
+        max-width: 768px;
+    }
 
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
+    @include desktop {
+        max-width: 1200px;
+    }
 
-@media screen and (min-width: 1200px) {
-  .container {
-    max-width: 1200px;
-  }
+    &--header {
+        padding: 16px 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $tenth-color;
+    }
+
+    @include tablet {
+        max-width: 768px;
+        padding: 26px 15px;
+    }
+    @include desktop {
+        max-width: 1200px;
+    }
 }

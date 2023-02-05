@@ -1,0 +1,129 @@
+.menu-toggle {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
+
+.menu-container {
+    position: fixed;
+    background-color: $tenth-color;
+    width: 100vw;
+    height: 100vh;
+    padding: 48px 40px;
+    z-index: 999;
+    transform: translateX(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) ease-in-out;
+    left: 0px;
+    top: 0px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+        0px 1px 3px rgba(0, 0, 0, 0.16);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &.is-open {
+        transform: translateX(0);
+        visibility: visible;
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    &__hamburger {
+        background-color: transparent;
+        cursor: pointer;
+        border: none;
+        outline: none;
+
+        &:hover,
+        &:focus {
+            fill: $second-color;
+        }
+    }
+    &__close-icon {
+        position: absolute;
+        fill: $first-color;
+        top: 21px;
+        right: 25.33px;
+    }
+}
+
+.mobile-menu {
+    &__list {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    &__link {
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        color: $first-color;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:is(:hover, :focus) {
+            color: $second-color;
+        }
+    }
+
+    &__contact {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__mail {
+      display:flex;
+        text-decoration: none;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.16px;
+        letter-spacing: 0.02em;
+        color: $fourth-color;
+       margin-bottom: 32px;}
+
+    &__phone {
+      display:flex;
+        text-decoration: none;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 1.17px;
+        letter-spacing: 0.02em;
+        color: $second-color;
+        margin-bottom: 64px;
+    }
+
+    &__social {
+        display: flex;
+        flex-wrap: nowrap;
+        list-style-type: none;
+        margin-top: 64px;
+    }
+
+    &__social-item {
+        display: inline-block;
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+        margin-right: 10px;
+        padding-right: 10px;
+    }
+    &__social-link {
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22px;
+        letter-spacing: 0.02em;
+        color: $second-color;
+    }
+}

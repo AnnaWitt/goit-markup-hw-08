@@ -2,11 +2,20 @@
   display: flex;
 
   &__links {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    margin-left: 93px;
-    gap: 46px;
+    display: none;
+
+    @include tablet {
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+      margin-left: 83px;
+      gap: 60px;
+    }
+
+    @include desktop {
+      margin-left: 93px;
+      gap: 46px;
+    }
   }
 
   &__menu-link {

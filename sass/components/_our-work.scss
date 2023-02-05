@@ -1,5 +1,13 @@
-.our-work {
+@media screen and (max-width: 1199px) {
+    .our-work {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .our-work{
     margin-top: -94px;
+    
   &__heading {
     color: $first-color;
     font-weight: 700;
@@ -40,4 +48,5 @@
     text-align: center;
     background-color: rgba(47, 48, 58, 0.8);
   }
+}
 }
