@@ -21,30 +21,39 @@
 
 <body>
   <header class="header">
-    <div class="container container--header ">
+    <div class="container container--header">
       <nav class="main-nav">
         <a class="logo" href="index.html"><span class="logo logo--blue">Web</span>Studio</a>
         <ul class="main-nav__links">
-          <li><a class="main-nav__menu-link" href="index.html">Agencja</a></li>
-          <li><a class="main-nav__menu-link main-nav__menu-link--underline" href="portfolio.html">Portfolio</a></li>
+          <li><a class="main-nav__menu-link main-nav__menu-link--underline" href="index.html">Agencja</a></li>
+          <li><a class="main-nav__menu-link" href="portfolio.html">Portfolio</a></li>
           <li><a class="main-nav__menu-link" href="#">Kontakt</a></li>
         </ul>
       </nav>
-      <ul class="contact-list">
-        <li>
-          <a href="mailto:info@devstudio.com" class="contact-list__item"><svg class="contact-list__icon" width="16"
-              height="12">
-              <use href="./images/icons.svg#icon-envelope"></use>
-            </svg>info@devstudio.com</a>
-        </li>
-        <li>
-          <a href="tel:+48111111111" class="contact-list__item"><svg class="contact-list__icon" width="10" height="16">
-              <use href="./images/icons.svg#icon-smartphone"></use>
-            </svg>+48 111 111 111</a>
-        </li>
-      </ul>
+      <div>
+        <ul class="contact-list">
+          <li>
+            <a href="mailto:info@devstudio.com" class="contact-list__item"><svg class="contact-list__icon" width="16"
+                height="12">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>info@devstudio.com</a>
+          </li>
+          <li>
+            <a href="tel:+48111111111" class="contact-list__item"><svg class="contact-list__icon" width="10"
+                height="16">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>+48 111 111 111</a>
+          </li>
+        </ul>
+      </div>
+      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg width="40" height="40">
+          <use href="./images/icons.svg#icon-menu_40px"></use>
+        </svg>
+      </button>
     </div>
   </header>
+
   <main>
     <section class="section">
       <div class="portfolio-filters container">
@@ -58,7 +67,7 @@
       </div>
       <div class="portfolio-projects container">
         <ul class="portfolio-projects__list">
-          <li class="portfolio-projects__item-shadow">
+          <li class="portfolio-projects__list__item">
             <div class="portfolio-projects__photo">
               <img src="images/technocrackweb.jpg" alt="wizytówka strony internetowej z 3 zdjęciami ludzi" width="370"
                 height="294" />
@@ -91,7 +100,7 @@
               <p class="portfolio-projects__name">Dizajn</p>
             </div>
           </li>
-          <li class="portfolio-projects__item-shadow">
+          <li class="portfolio-projects__list__item">
             <div class="portfolio-projects__photo">
               <img src="images/restaurantlogo.jpg" alt="czarne logo restauracji na tle rekina" width="370"
                 height="294" />
@@ -108,7 +117,7 @@
               <p class="portfolio-projects__name">Aplikacja</p>
             </div>
           </li>
-          <li class="portfolio-projects__item-shadow">
+          <li class="portfolio-projects__list-item">
             <div class="portfolio-projects__photo">
               <img src="images/headphones.jpg" alt="czarne słuchawki bezprzewodowe" width="370" height="294" />
               <div class="portfolio-projects__photo-overlay">
@@ -124,7 +133,7 @@
               <p class="portfolio-projects__name">Marketing</p>
             </div>
           </li>
-          <li class="portfolio-projects__item-shadow">
+          <li class="portfolio-projects__list-item">
             <div class="portfolio-projects__photo">
               <img src="images/boxes.jpg" alt="2 różne pudełka" width="370" height="294" />
               <div class="portfolio-projects__photo-overlay">
@@ -140,7 +149,7 @@
               <p class="portfolio-projects__name">Aplikacja</p>
             </div>
           </li>
-          <li class="portfolio-projects__item-shadow">
+          <li class="portfolio-projects__list-item">
             <div class="portfolio-projects__photo">
               <img src="images/pcmonitor.jpg" alt="duży prostokątny monitor do komputera z czarnym wyświetlaczem"
                 width="370" height="294" />
@@ -157,7 +166,7 @@
               <p class="portfolio-projects__name">Strona internetowa</p>
             </div>
           </li>
-          <li class="portfolio-projects__item-shadow">
+          <li class="portfolio-projects__list-item">
             <div class="portfolio-projects__photo">
               <img src="images/magazine.jpg" alt="otwarte czasopismo ze zdjęciami ludzi na stronach" width="370"
                 height="294" />
@@ -174,10 +183,9 @@
               <p class="portfolio-projects__name">Dizajn</p>
             </div>
           </li>
-          <li class="portfolio-projects__item-shadow">
+          <li class="portfolio-projects__list-item">
             <div class="portfolio-projects__photo">
-              <img src="images/labeltag.jpg" alt="Biała zawieszka z czarnym drukowanym napisem LABELTAG" width="370"
-                height="294" />
+              <img src="images/labeltag.jpg" alt="Biała zawieszka z czarnym drukowanym napisem LABELTAG" />
               <div class="portfolio-projects__photo-overlay">
                 <p class="portfolio-projects__text">Technocrack jest popularną platformą wykorzystywaną do
                   rozpowszechniania koronawirusa. Firmy
@@ -191,9 +199,9 @@
               <p class="portfolio-projects__name">Marketing</p>
             </div>
           </li>
-          <li class="portfolio-projects__item-shadow">
+          <li class="portfolio-projects__list-item">
             <div class="portfolio-projects__photo">
-              <img src="images/notebook.jpg" alt="dłonie piszące na laptopie" width="370" height="294" />
+              <img src="images/notebook.jpg" alt="dłonie piszące na laptopie" />
               <div class="portfolio-projects__photo-overlay">
                 <p class="portfolio-projects__text">Technocrack jest popularną platformą wykorzystywaną do
                   rozpowszechniania koronawirusa. Firmy
@@ -213,10 +221,10 @@
   </main>
   <footer class="footer">
     <div class="footer__content container">
-      <div class="footer__address-box">
-        <a class="logo" href="#"><span class="logo logo--blue">Web</span><span
+      <div class="footer__address">
+        <a href="#" class="logo"><span class="logo logo--blue">Web</span><span
             class="logo logo--white">Studio</span></a>
-        <address class="footer__address-box">
+        <address>
           <ul class="footer__company-contacts">
             <li class="footer__localization-info">m. Warszawa, Aleje Jerozolimskie 21</li>
             <li><a class="footer__contact-info" href="mailto:info@example.com">info@example.com</a></li>
@@ -227,49 +235,78 @@
       <div class="footer__social-media">
         <h3 class="footer__social-heading">DOŁĄCZ DO NAS
         </h3>
-        <div>
-          <ul class="footer__social-media-list">
-            <li>
-              <a class="footer__social-link" href="#"><svg class="footer__social-icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram-2"></use>
-                </svg></a>
+        <ul class="footer__social-media-list">
+          <li>
+            <a class="footer__social-link" href="#"><svg class="footer__social-icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-instagram-2"></use>
+              </svg></a>
+          </li>
+          <li>
+            <a class="footer__social-link" href="#"><svg class="footer__social-icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-twitter-11"></use>
+              </svg></a>
+          </li>
+          <li>
+            <a class="footer__social-link" href="#"><svg class="footer__social-icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-facebook-1"></use>
+              </svg></a>
+          </li>
+          <li>
+            <a class="footer__social-link" href="#"><svg class="footer__social-icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-linkedin-1"></use>
+              </svg></a>
+          </li>
+        </ul>
 
-            </li>
-            <li>
-              <a class="footer__social-link" href="#"><svg class="footer__social-icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter-11"></use>
-                </svg></a>
-
-            </li>
-            <li>
-              <a class="footer__social-link" href="#"><svg class="footer__social-icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook-1"></use>
-                </svg></a>
-
-            </li>
-            <li>
-              <a class="footer__social-link" href="#"><svg class="footer__social-icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin-1"></use>
-                </svg></a>
-            </li>
-          </ul>
-        </div>
       </div>
       <div class="footer__newsletter">
         <h3 class="footer__newsletter-heading">Zapisz się do newslettera</h3>
-        <form class="footer__newsletter-form">
-          <label>
-            <input type="email" name="email" class="footer__newsletter-input" placeholder="E-mail" />
-          </label>
-          <button type="submit" class="button button--newsletter-btn">Zapisz się
+        <div class="footer__newsletter-form">
+
+          <input type="email" name="email" class="footer__newsletter-input" placeholder="E-mail" />
+
+          <button class="button button--newsletter-btn" type="submit">Zapisz się
             <svg width="24" height="24">
               <use href="./images/icons.svg#icon-icon-send"></use>
             </svg>
           </button>
-        </form>
+          </form>
+        </div>
       </div>
     </div>
   </footer>
+  <div class="menu-container js-menu-container is open" id="mobile-menu">
+    <button class="menu-container__close js-close-menu">
+      <svg class="menu-container__close-icon" width="40" height="40">
+        <use href="images/icons.svg#icon-close_40px">
+        </use>
+      </svg>
+    </button>
+    <div>
+      <ul class="mobile-menu__list">
+        <li><a href="index.html" class="mobile-menu__list-link">Agencja</a></li>
+        <li><a href="portfolio.html" class="mobile-menu__list-link">Portfolio</a></li>
+        <li><a href="#" class="mobile-menu__list-link">Kontakty</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="mobile-menu__contact">
+        <a href="tel:+481111111111" class="mobile-menu__contact-phone">+48 111 111 111</a>
+        <a href="mailto:info@devstudio.comv" class="mobile-menu__contact-mail">info@devstudio.com</a>
+      </div>
+
+
+      <ul class="mobile-menu__social">
+        <li class="mobile-menu__social-item"><a class="mobile-menu__social-item-link" href="#">Inastagram</a></li>
+        <li class="mobile-menu__social-item"><a class="mobile-menu__social-item-link" href="#">Twitter</a></li>
+        <li class="mobile-menu__social-item"><a class="mobile-menu__social-item-link" href="#">Facebook</a></li>
+        <li class="mobile-menu__social-item"><a class="mobile-menu__social-item-link" href="#">Linkedin</a></li>
+      </ul>
+    </div>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
 </body>
 
 </html>
