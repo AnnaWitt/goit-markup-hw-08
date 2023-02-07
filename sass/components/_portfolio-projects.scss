@@ -2,7 +2,7 @@
   display: flex;
   padding-top: 0;
 
-  &__list {
+  &__list-item{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -11,13 +11,13 @@
   }
   &__item-shadow {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  &__item-shadow:hover,
-  &__item-shadow:focus {
+    &:hover,
+    &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
-  }
-  &__item-shadow:hover &__photo-overlay {
+  }}
+
+  &:hover &__photo-overlay {
     transform: translatey(0);
   }
 
@@ -29,6 +29,7 @@
     overflow: hidden;
     position: relative;
   }
+  
   &__photo-overlay {
     position: absolute;
     top: 0;
